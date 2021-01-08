@@ -14,7 +14,8 @@ The redeem module converts the anonymized token backe to its original form. The 
 
 Since the account balance of each Raze account will be encrypted under a public key, and hence it will guarantee the transaction amount confidentiality. The "one-out-of-many" proof will hide the sender and receiver identities among a ring of Raze accounts, and hence guarantee the user anonymity. The raze network can be viewed as a pool of boiling water, where each water molecule interacts with each other in a chaotic and vibrant fashion. Whenever a user deposit a certain amount of token through invoking the mint module, the token would be like a water molecule drops into this pool of boiling water, it is no longer traceable.  
 
+![alt text](https://github.com/razenetwork/Raze_Network/blob/main/raze_architecture.png?raw=true)
 
 
-A raze account is identified by a public key Y. 
+A raze account is identified by a public key Y. The encrypted balance would be
 

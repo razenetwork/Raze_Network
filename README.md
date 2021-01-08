@@ -16,6 +16,5 @@ Since the account balance of each Raze account will be encrypted under a public 
 
 
 
-
 A raze account is identified by a public key Y. 
 

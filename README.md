@@ -1,10 +1,12 @@
 # Raze_Network
 
-###**Project overview**
+**Project overview**
 
-Raze network is a substrate-based cross-chain privacy-preserving payment protocol for the Polkadot ecosystem. The Raze network applies zk-snark to the Zether framework to build a second-layer decentralized anonymous payment module. It will be then imported as a substrate-based smart contract. The goal of this contract is to enable the cross-chain privacy-preserving payment scheme for the Polkdot ecosystem.
+Raze network is a generic private payment network for the Polkadot DeFi ecosystem. The core technical module of the Raze network is a second-layer decentralized anonymous payment module, which guarantees the payment privacy of the parties involved in any DeFi stack of the Polkadot ecosystem. More specifically, we will provide a substrate-based smart contract, which allows the user hide its account address and balance before participating the Polkadot DeFi stacks, be it DEX, liquidity mining, loan, insurance, etc.  
 
 **Technical modules**
+
+We will apply ZK-SNARK to the Zether framework to build our second-layer decentralized anonymous payment module. It will be then imported as a substrate-based smart contract. The goal of this contract is to enable the cross-chain privacy-preserving payment scheme for the Polkdot ecosystem.
 
 Similar to the Zether framework, it will have three technical modules: mint, transfer and redeem. The mint module will convert any ERC-20 token into an anonymized version, while the redeem module will convert the anonymized token into its native form. The transfer module is the one that enables the anonymous transfer of the token. It will conceal the transaction amount and protect the anonymity of both sender and receiver. 
 

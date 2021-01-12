@@ -20,6 +20,7 @@ Since the account balance of each Raze account will be encrypted under a public 
 
 ![alt text](https://github.com/razenetwork/Raze_Network/blob/main/raze_architecture.png?raw=true)
 
+**Project details**
 
 A raze account is identified by a public key Y. The encrypted balance would be
 

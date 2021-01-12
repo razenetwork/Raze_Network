@@ -13,7 +13,7 @@ Raze network is a native privacy-preserving layer for the Polkadot ecosystem. Mo
 
 ![alt text](https://github.com/razenetwork/Raze_Network/blob/main/raze_polkadot.png?raw=true)
 
-### Overview
+### Project Details 
 
 We will apply ZK-SNARK to the Zether framework to build our second-layer decentralized anonymous payment module. It will be then imported as a substrate-based smart contract. The goal of this contract is to enable the cross-chain privacy-preserving payment scheme for the Polkdot ecosystem.
 
@@ -28,6 +28,13 @@ The redeem module converts the anonymized token backe to its original form. The 
 Since the account balance of each Raze account will be encrypted under a public key, and hence it will guarantee the transaction amount confidentiality. The "one-out-of-many" proof will hide the sender and receiver identities among a ring of Raze accounts, and hence guarantee the user anonymity. The raze network can be viewed as a pool of boiling water, where each water molecule interacts with each other in a chaotic and vibrant fashion. Whenever a user deposit a certain amount of token through invoking the mint module, the token would be like a water molecule drops into this pool of boiling water, it is no longer traceable.  
 
 ![alt text](https://github.com/razenetwork/Raze_Network/blob/main/raze_architecture.png?raw=true)
+
+Each raze user can register a raze account any time (s)he wishes. The registeration algorithm CreateAddress will generate a secret key and public key. The public key is the identifier of this raze account. 
+
+The client side runs the CreateMintTx algorithm, which takes as input the raze account pk and the amount of native token amount amt as inputs. The output of the CreateMintTx algorithm is a ciphertext encrypted under the public key pk. If raze account pk already has a ciphertext cp, the newly created ciphertext will be homomorphically added to the existing ciphertext to increase the amount of token under the raze account. Otherwise, the new ciphertext will be attached to the raze account. The native token will be stored in the mint contract. 
+
+To invoke the transfer contract, the client side runs the CreateTransferTx algorithm, which takes as inputs the raze account secret key sk, and the amount of token amt, the public keys of both sender, receiver raze account and those of the anonymity set. The output of the CreateTransferTx algorithm is a zero-knowledge proof that the prover knows one of the secret keys of the anonymity set, the consistency of the payment and range proof. equation todo....
+
 
 ### Overview
 

@@ -9,7 +9,9 @@
 
 ## Project Overview
 
-Raze network is a native privacy-preserving layer for the Polkadot ecosystem. More specifically, it will provide a cross-chain end-to-end privacy for the entire DeFi stack of the Polkadot encosystem. The core technical module of the Raze network is a second-layer decentralized anonymous payment module, which guarantees the payment privacy of the parties involved in the Polkadot ecosystem. We will provide a substrate-based smart contract, which allows the user hide its account address and balance before participating the Polkadot DeFi stacks, be it DEX, liquidity mining, loan, insurance, etc. Our goal is to protect the users' transaction data from the surveilance of big brother.   
+Raze network is a native privacy-preserving layer for the Polkadot ecosystem. More specifically, it will provide a cross-chain end-to-end privacy for the entire DeFi stack of the Polkadot encosystem. The core technical module of the Raze network is a second-layer decentralized anonymous payment module, which guarantees the payment privacy of the parties involved in the Polkadot ecosystem. We will provide a substrate-based smart contract, which allows the user hide its account address and balance before participating the Polkadot DeFi stacks, be it DEX, liquidity mining, loan, insurance, etc. Our goal is to protect the users' transaction data from the surveilance of big brother. 
+
+![alt text](https://github.com/razenetwork/Raze_Network/blob/main/raze_polkadot.png?raw=true)
 
 ### Overview
 

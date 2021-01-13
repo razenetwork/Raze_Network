@@ -27,6 +27,8 @@ The redeem module converts the anonymized token backe to its original form. The 
 
 Since the account balance of each Raze account will be encrypted under a public key, and hence it will guarantee the transaction amount confidentiality. The "one-out-of-many" proof will hide the sender and receiver identities among a ring of Raze accounts, and hence guarantee the user anonymity. The raze network can be viewed as a pool of boiling water, where each water molecule interacts with each other in a chaotic and vibrant fashion. Whenever a user deposit a certain amount of token through invoking the mint module, the token would be like a water molecule drops into this pool of boiling water, it is no longer traceable.  
 
+We have two additional modules: lock and unlock. The lock module would allows an account owner to lock the account, while the unlock module allows the account owner to unlock the account. 
+
 ![alt text](https://github.com/razenetwork/Raze_Network/blob/main/raze_architecture.png?raw=true)
 
 Each raze user can register a raze account any time (s)he wishes. The registeration algorithm CreateAddress will generate a secret key and public key. The public key is the identifier of this raze account. 
@@ -34,6 +36,23 @@ Each raze user can register a raze account any time (s)he wishes. The registerat
 The client side runs the CreateMintTx algorithm, which takes as input the raze account pk and the amount of native token amount amt as inputs. The output of the CreateMintTx algorithm is a ciphertext encrypted under the public key pk. If raze account pk already has a ciphertext cp, the newly created ciphertext will be homomorphically added to the existing ciphertext to increase the amount of token under the raze account. Otherwise, the new ciphertext will be attached to the raze account. The native token will be stored in the mint contract. 
 
 To invoke the transfer contract, the client side runs the CreateTransferTx algorithm, which takes as inputs the raze account secret key sk, and the amount of token amt, the public keys of both sender, receiver raze account and those of the anonymity set. The output of the CreateTransferTx algorithm is a zero-knowledge proof that the prover knows one of the secret keys of the anonymity set, the consistency of the payment and range proof. equation todo....
+
+The client side runs the CreateBurnTx algorithm to invoke the Fund contract. It takes the account secret key sk, the withdrawal amount aml and the public key pk as input and generates a zero-knowledge proof that the user knows the secret key and the account pk has enough balance for the withdraw operation. The zero-knowledge proof will be used as inputs to invoke the Burn contract. 
+
+The user can invoke the lock module by running the CreateLockTx algorithm on the client side. The client inputs a secret key sk and an Ethereum address addr to generate a zero-knowledge proof to demonstrate the user knows the secret key of the account and he authorizes the frozen the account, which will be locked to the input address addr. Similarly, the user can invoke the unlock module by running a CreateUnlockTx on the client side. The inputs of CreateUnlockTx algorithm are the same to that of the CreateLockTx algorithm. It will generate a similar zero-knowledge proof to unlock the account. Note, the zero-knowledge proof used here certainly can prevent the replay attack. 
+
+
+## Development Roadmap
+* 2020 Q3 - Project Establishment
+* 2020 Q4 - Draft of Whitepaper 
+* 2021 Q1 - Official Whitepaper Publish
+* 2021 Q1 - Official Website Launch 
+* 2021 Q1 - Core and zkSNARKS Implementation Release
+* 2021 Q2 - Token and Dapp source code Release
+* 2021 Q3 - Protocol and Product Launch
+* 2021 Q3 - Liquidity Reward Program
+* 2021 Q4 - Implementing the Bridge to other DeFi
+* 2021 Q4 - Integrating More Customized Functions
 
 
 ### Overview

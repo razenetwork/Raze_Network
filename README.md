@@ -41,6 +41,9 @@ The client side runs the CreateBurnTx algorithm to invoke the Fund contract. It 
 
 The user can invoke the lock module by running the CreateLockTx algorithm on the client side. The client inputs a secret key sk and an Ethereum address addr to generate a zero-knowledge proof to demonstrate the user knows the secret key of the account and he authorizes the frozen the account, which will be locked to the input address addr. Similarly, the user can invoke the unlock module by running a CreateUnlockTx on the client side. The inputs of CreateUnlockTx algorithm are the same to that of the CreateLockTx algorithm. It will generate a similar zero-knowledge proof to unlock the account. Note, the zero-knowledge proof used here certainly can prevent the replay attack. 
 
+### Ecosystem Fit 
+
+Decentralized finance (DeFi) if a nascent ecosystem. Privacy is essential to the prosperity of DeFi. The raze network will serve as a vital infrastructure for the future development of privacy-preserving DeFi in the Polkadot ecosystem. The raze network will not only liberate the Polkadot DeFi ecosystem from the surveilance, but it will also significantly increase the liquidity of the Polkadot ecosystem. The closest product to the Raze network is the Manta network, which is a privacy-preserving DEX system. Our scheme differs from theirs in two regards: 1. our product is much more generic in the sense that it supports any kind of DeFi product in the Polkadot system, and it also supports anonymity mining, which in itself already a vital DeFi product. In constrast, the Manta network focuses on the private DEX system. 2. From the technical perspective, the underlying zero-knowledge proof scheme for the Manta network requires trusted setup, which is why they require a trust ceremony. In contrast, the zero-knowledge proof scheme we adopt does not require any trusted setup, which is much more in accordance with the decentralization ethos. 
 
 ## Development Roadmap
 * 2020 Q3 - Project Establishment
@@ -119,8 +122,8 @@ To assist you in defining it, we created a document with examples for some grant
 
 ### Overview
 * **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC or DAI for the whole project. The total amount of funding needs to be below $30k for initial grants and $100k for follow-up grants at the time of submission. (e.g. 0.80 BTC)
+* **Full-time equivalent (FTE):**  1
+* **Total Costs:** 1 BTC
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 1 month

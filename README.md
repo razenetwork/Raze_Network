@@ -106,7 +106,6 @@ Please describe the team's relevant experience.  If the project involves develop
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
 
 Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
 
@@ -133,14 +132,26 @@ To assist you in defining it, we created a document with examples for some grant
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
+| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof scheme we adopt for the Raze network We will create a Substrate module that will incorporate the verification logic for mint, transfer and redeem module. It will support the verification of anonymous minting, transfer and redeem for Dot and any ERC-20 token. 
+| 2. | Benchmark | Benchmark on the latency of the proposed module |  
 | 3. | Substrate module: Z | We will create a Substrate module that will... |  
 | 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 5. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |
+
+### Milestone 1 Example — Implement Substrate Modules 
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 0.75 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 1. | Raze client module | We will implement the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, lock, and unlock modules. This module will allow the client side to generate the necessary transaction to trigger the corresponding modules. 
+| 2. | Privacy-preserving DeFi functionality | We will implement anonymous mining functionality, which allows the users to mint and lock private coins and unlock the private coins after a certain period of time.  
+| 2. | Benchmark | Benchmark on the usability of the proposed module |  
+| 3. | Substrate module: Z | We will create a Substrate module that will... |  
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 5. | Docker | We will provide a dockerfile to demonstrate the end-to-end usage of our modules |
 
 ### Milestone 2 Example — Additional features
 ...

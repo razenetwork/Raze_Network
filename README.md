@@ -43,6 +43,17 @@ The client side runs the CreateRedeemTx algorithm to invoke the Redeem contract.
 
 The user can invoke the lock module by running the CreateLockTx algorithm on the client side. The client inputs a secret key sk and an Ethereum address addr to generate a signature to demonstrate he is indeed the owner of the account and he authorizes to lock the account to the input address addr. The signature would be `Sign(x, addr)`. Similarly, the user can invoke the unlock module by running a CreateUnlockTx on the client side. The inputs of CreateUnlockTx algorithm are the same to that of the CreateLockTx algorithm. It will generate a similar signature to unlock the account. Note, we will embed a nonce derived from the current epoch number to prevent the replay attack. 
 
+### Substrate/Polkadot Integration
+
+The raze network will be implemented as Substrate modules. More specifically, we will build a raze substrate pallet that supports:
+
+* The user could mint a private token by invoking the Mint module.
+* A user owns a raze account could transfer the private token privately to another raze account by running the Transfer module.
+* A user could run the Redeem module to convert the private token to its native form.
+* The lock and unlock modules will allow the users to participate in the anonymity mining, and thus provide incentives to the users to join the pool and thus increase the anonymity set. 
+
+The ledger state will mainly keep a record of the raze accounts and the balance ciphertexts, pending transfer tables, etc. 
+
 ### Ecosystem Fit 
 
 Decentralized finance (DeFi) in Polkadot is still a newborn. Privacy is essential to the success and prosperity of DeFi. The raze network will serve as a vital infrastructure for the future development of privacy-preserving DeFi in the Polkadot ecosystem. The raze network will not only liberate the Polkadot DeFi ecosystem from the surveilance of the big brother, but also significantly increase the liquidity of the Polkadot ecosystem. 

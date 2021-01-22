@@ -61,39 +61,6 @@ The closest product to the Raze network is the Manta network, which is a privacy
 * our product is much more generic in the sense that it supports all the DeFi products in the Polkadot system, and it also supports anonymity mining, which in itself already a vital DeFi functionality. In constrast, the Manta network focuses solely on the private DEX system, which limits the scope of its application scenarios. 
 * From the technical perspective, the underlying zero-knowledge proof scheme for the Manta network requires trusted setup, which is why they require a trust ceremony. In contrast, the zero-knowledge proof scheme we adopt does not require any trusted setup. All the public parameters of our system can be randomly sampled from the underlying group in a totally transparent fashion, which is much more in accordance with the decentralization ethos. 
 
-## Development Roadmap
-* 2020 Q3 - Project Establishment
-* 2020 Q4 - Draft of Whitepaper 
-* 2021 Q1 - Official Whitepaper Publish
-* 2021 Q1 - Official Website Launch 
-* 2021 Q1 - Core and zkSNARKS Implementation Release
-* 2021 Q2 - Token and Dapp source code Release
-* 2021 Q3 - Protocol and Product Launch
-* 2021 Q3 - Liquidity Reward Program
-* 2021 Q4 - Implementing the Bridge to other DeFi
-* 2021 Q4 - Integrating More Customized Functions
-
-
-### Overview
-
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
-
-### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
-
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
-
-### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
-
 ## Team :busts_in_silhouette:
 
 ### Team members
@@ -123,26 +90,15 @@ Please describe the team's relevant experience.  If the project involves develop
 ## Development Roadmap :nut_and_bolt: 
 
 
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-* Deliverables 0a-0d are mandatory and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test)
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  1
-* **Total Costs:** 1 BTC
+* **Total Estimated Duration: 3 months
+* **Full-time equivalent (FTE): 3
+* **Total Costs:** 1.5 BTC
 
 ### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
+* **Estimated Duration:** 2 month
+* **FTE:**  2 
 * **Costs:** 0.75 BTC
 
 | Number | Deliverable | Specification |

@@ -107,7 +107,7 @@ The main deliverable of this milestone is the Raze substrate pallet that support
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that will incorporate the verification logic for the aforementioned modules. A cross-chain bridge for ERC-20 token. It will support the verification of anonymous minting, transfer, redeem, lock and unlock for any ERC-20 token and mainstream Polkadot tokens such as DOT and KUSAMA. 
+| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that will incorporate the verification logic for the aforementioned modules. It will support the verification of anonymous minting, transfer, redeem, lock and unlock for any ERC-20 token and mainstream Polkadot tokens such as DOT and KUSAMA. 
 | 2. | Benchmark | Benchmark on the throughput and gas cost of the proposed modules |   
 | 3. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |
 
@@ -123,7 +123,8 @@ The main deliverable of this milestone is the client for the aforementioned modu
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 1. | Raze client module | We will implement the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, lock, and unlock modules. This module will allow the client side to generate the necessary transaction to trigger the corresponding modules. 
 | 2. | Privacy-preserving DeFi functionality | We will implement anonymous mining functionality, which allows the users to mint and lock private coins and unlock the private coins after a certain period of time.  
-| 3. | Benchmark | Benchmark on the usability of the proposed module |    
+| 3. | A cross-chain bridge between Ethereum and Polkadot | The bridge will map ERC-20 token to the Polkadot ecosystem.   
+| 3. | Benchmark | Benchmark on the latency and usability of the proposed module |    
 | 4. | Docker | We will provide a dockerfile to demonstrate the end-to-end usage of our modules |
 
 ### Milestone 2 Example — Additional features

@@ -93,8 +93,8 @@ Please describe the team's relevant experience.  If the project involves develop
 
 
 ### Overview
-* **Total Estimated Duration: 3 months
-* **Full-time equivalent (FTE): 3
+* **Total Estimated Duration:** 3 months
+* **Full-time equivalent (FTE):** 3
 * **Total Costs:** 1.5 BTC
 
 ### Milestone 1 — Raze Substrate Modules and cross-chain bridge implementation

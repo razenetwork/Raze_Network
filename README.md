@@ -97,7 +97,7 @@ Please describe the team's relevant experience.  If the project involves develop
 * **Full-time equivalent (FTE): 3
 * **Total Costs:** 1.5 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1 Example — Raze Substrate Modules and cross-chain bridge implementation
 * **Estimated Duration:** 2 month
 * **FTE:**  2 
 * **Costs:** 0.75 BTC
@@ -112,7 +112,7 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 | 3. | Benchmark | Benchmark on the throughput and gas cost of the proposed modules |   
 | 4. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1 Example — Raze client implementation and integration 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 0.75 BTC

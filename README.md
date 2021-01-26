@@ -97,7 +97,7 @@ Please describe the team's relevant experience.  If the project involves develop
 * **Full-time equivalent (FTE): 3
 * **Total Costs:** 1.5 BTC
 
-### Milestone 1 Example — Raze Substrate Modules and cross-chain bridge implementation
+### Milestone 1 — Raze Substrate Modules and cross-chain bridge implementation
 * **Estimated Duration:** 2 month
 * **FTE:**  2 
 * **Costs:** 0.75 BTC
@@ -112,12 +112,12 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 | 3. | Benchmark | Benchmark on the throughput and gas cost of the proposed modules |   
 | 4. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |
 
-### Milestone 1 Example — Raze client implementation and integration 
+### Milestone 2 — Raze client implementation and integration 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 0.75 BTC
 
-The main deliverable of this milestone is the client for the aforementioned modules that can trigger and sign these transactions. 
+The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts. 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -125,10 +125,8 @@ The main deliverable of this milestone is the client for the aforementioned modu
 | 1. | Raze client module | We will implement the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, lock, and unlock modules. This module will allow the client side to generate the necessary transaction to trigger the corresponding modules. 
 | 2. | Privacy-preserving DeFi functionality | We will implement anonymous mining functionality, which allows the users to mint and lock private coins and unlock the private coins after a certain period of time.   
 | 3. | Benchmark | Benchmark on the latency and usability of the proposed module |    
-| 4. | Docker | We will provide a dockerfile to demonstrate the end-to-end usage of our modules |
+| 4. | Docker | We will deploy the client APIs on Kusama or Rococo |
 
-### Milestone 2 Example — Additional features
-...
 
 ## Future Plans
 Please include the team's long-term plans and intentions.

@@ -122,10 +122,10 @@ The main deliverable of this milestone is the client that can generate the trans
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Raze client module | We will implement the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, lock, and unlock modules. This module will allow the client side to generate the necessary transaction to trigger the corresponding modules. 
-| 2. | Privacy-preserving DeFi functionality | We will implement anonymous mining functionality, which allows the users to mint and lock private coins and unlock the private coins after a certain period of time.   
-| 3. | Benchmark | Benchmark on the latency and usability of the proposed module |    
-| 4. | Docker | We will deploy the client APIs on Kusama or Rococo |
+| 1. | Raze client module | We will implement the client that supports the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, CreateLockTx, and CreateUnlockTx algorithms. This module will allow the client side to generate the necessary transaction to trigger the corresponding modules. 
+| 2. | Privacy-preserving DeFi functionality | Through combining the lock and mint, and unlock and redeem modules, we will implement anonymous mining functionality, which allows the users to mint and lock private coins and unlock the private coins after a certain period of time.   
+| 3. | Benchmark | Benchmark on the latency and usability of the proposed client functionalities |    
+| 4. | Docker | We will deploy the client on Kusama or Rococo |
 
 
 ## Future Plans

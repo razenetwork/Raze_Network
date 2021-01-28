@@ -107,7 +107,7 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. It will support the verification of anonymous mint, transfer, redeem, lock and unlock for any ERC-20 token and mainstream Polkadot tokens such as DOT and KUSAMA. 
+| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. It will support the verification of mint, transfer, redeem, lock and unlock for any ERC-20 token and mainstream Polkadot tokens such as DOT and KUSAMA. 
 | 2. | A cross-chain bridge between Ethereum and Polkadot | The bridge will map ERC-20 token to the Polkadot ecosystem and facilitate their private payment in the Polkadot ecosystem.  
 | 3. | Benchmark | Benchmark on the throughput and gas cost of the proposed modules |   
 | 4. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |
@@ -123,7 +123,7 @@ The main deliverable of this milestone is the client that can generate the trans
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 1. | Raze client module | We will implement the client that supports the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, CreateLockTx, and CreateUnlockTx algorithms. The clients will be able to generate the necessary transactions to trigger the corresponding substrate modules. 
-| 2. | Privacy-preserving DeFi functionality | Through combining the lock and mint, and unlock and redeem modules, we will implement anonymity mining functionality, which allows the users to mine the private tokens and unlock the private tokens after a certain period of time.   
+| 2. | Anonymity mining | Through combining the lock and mint, and unlock and redeem modules, we will implement anonymity mining functionality, which allows the users to mine the private tokens and unlock the private tokens after a certain period of time.   
 | 3. | Benchmark | Benchmark on the latency and usability of the proposed client functionalities |    
 | 4. | Docker | We will deploy the client on Kusama or Rococo and engage our community on the testing of our product. |
 

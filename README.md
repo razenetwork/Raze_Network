@@ -9,7 +9,7 @@
 
 ## Project Overview
 
-Raze network is a second-layer protocol that will provide cross-chain payment privacy for the entire DeFi stack of the Polkadot ecosystem. The core technical module of the Raze network is a second-layer decentralized anonymous payment module, which will serve as a universal plugin-and-play infrastructure for the Polkadot DeFi ecosystem. This module will be imported as a substrate-based smart contract, which allows the user to hide one's account address and financial information (as shown in the Figure below) before participating the Polkadot DeFi stacks, be it DEX, liquidity mining, loan, insurance, etc. Since the Zether framework was designed to support the Ethereum account model, our contract will support both ERC-20 cross-chain private payment and the mainstream tokens issued in the Polkadot ecosystem such as DOT/KUSAMA, and hence significantly increase the liquidity of the Polkadot ecosystem. 
+Raze network is a second-layer protocol that will provide cross-chain payment privacy for the entire DeFi stack of the Polkadot ecosystem. The core technical module of the Raze network is a second-layer decentralized anonymous payment module, which will serve as a universal plugin-and-play infrastructure for the Polkadot DeFi ecosystem. This module will be imported as a substrate-based smart contract, which allows the user to hide one's account address and financial information (as shown in the Figure below) before participating the Polkadot DeFi stacks, be it DEX, liquidity mining, loan, insurance, etc. Since the Zether framework was designed to support the Ethereum account model, our contract will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT/KUSAMA and ERC-20 cross-chain private payment, and hence significantly increase the liquidity of the Polkadot ecosystem. 
 
 ![alt text](https://github.com/razenetwork/Raze_Network/blob/main/raze_polkadot.png?raw=true)
 
@@ -102,12 +102,12 @@ Please describe the team's relevant experience.  If the project involves develop
 * **FTE:**  2 
 * **Costs:** 0.75 BTC
 
-The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. The substrate modules will support both the cross-chain payment of ERC-20 tokens and the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA.   
+The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. The substrate modules will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA and the cross-chain payment of ERC-20 tokens.   
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. It will support the verification of mint, transfer, redeem, lock and unlock for any ERC-20 token and mainstream Polkadot tokens such as DOT and KUSAMA. 
+| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. It will support the verification of mint, transfer, redeem, lock and unlock for mainstream Polkadot tokens such as DOT and KUSAMA and any ERC-20 token. 
 | 2. | A cross-chain bridge between Ethereum and Polkadot | The bridge will map ERC-20 token to the Polkadot ecosystem and facilitate their private payment in the Polkadot ecosystem.  
 | 3. | Benchmark | Benchmark on the throughput and gas cost of the proposed modules |   
 | 4. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |

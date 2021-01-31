@@ -38,7 +38,7 @@ To invoke the Mint contract, the client-side runs a CreateMintTx algorithm, whic
 To invoke the transfer contract, the client-side runs a CreateTransferTx algorithm, which takes as inputs the raze account secret key `sk`, and the amount of transferred token `amt`, the public keys of sender `pk_s`, receiver `pk_r` and the public keys of the anonymity set `{pk_a}`. The output of the CreateTransferTx algorithm is a zero-knowledge proof that the prover knows one of the secret keys of the aforementioned public key set, the payment consistency proof, and range proof. The statement of this zkp is 
 ![alt text](https://github.com/razenetwork/Raze_Network/blob/main/zkp_statement.png?raw=true)
 
-The client-side runs a CreateRedeemTx algorithm to invoke the redeem contract. It takes the account secret key `sk`, the withdrawal amount `amt`, and the public key `pk` as input to generate a zero-knowledge proof showing that the user knows the secret key `sk` for the account public key `pk` and the account has enough balance for the withdraw operation. The zero-knowledge proof will be used to invoke the Redeem contract. The statement of this zkp is 
+The client-side runs a CreateRedeemTx algorithm to invoke the redeem contract. It takes the account secret key `sk`, the amount `amt`, and the public key `pk` as input to generate a zero-knowledge proof showing that the user knows the secret key `sk` for the account public key `pk` and the account has enough balance for the redeem operation. The zero-knowledge proof will be used to invoke the redeem contract. The statement of this zkp is 
 ![alt text](https://github.com/razenetwork/Raze_Network/blob/main/redeem_statement.png?raw=true)
 
 The user can invoke the lock module by running a CreateLockTx algorithm on the client-side. The client inputs a secret key `sk` and an Ethereum address `addr` to generate a signature to demonstrate he is indeed the owner of the account and he authorizes to lock the account to the input address `addr`. The signature would be `Sign(x, addr)`. Similarly, the user can invoke the unlock module by running a CreateUnlockTx on the client-side. The input of CreateUnlockTx algorithm is the same as that of the CreateLockTx algorithm. It will generate a similar signature to unlock the account. Note, we will embed a nonce derived from the current epoch number to prevent the replay attack. 
@@ -59,7 +59,7 @@ The ledger state will mainly keep a record of the raze accounts, the balance enc
 Decentralized finance (DeFi) in the Polkadot ecosystem is still a newborn. Privacy is essential to the success and prosperity of DeFi. The raze network will serve as a vital infrastructure for the future development of privacy-preserving DeFi in the Polkadot ecosystem. The raze network will not only liberate the Polkadot DeFi ecosystem from the surveillance of the big brother, but also significantly increase the liquidity of the Polkadot ecosystem. 
 The closest product to the Raze network is the Manta network, which is a privacy-preserving DEX system. Our proposal differs from theirs in the following regards: 
 * The Zether framework is designed for the Ethereum account-based model, and hence it naturally facilitates the cross-chain private payment of ERC-20 tokens in the Polkadot ecosystem. Since all the aforementioned smart contract modules are supposed to be imported as Substrate-based modules, they will also be compatible with the tokens issued in the Polkadot ecosystem, such as DOT or KUSAMA. To sum up, our work will significantly increase the liquidity of the Polkadot system due to its cross-chain interoperability. 
-* Our product is much more generic in the sense that it supports all the DeFi products in the Polkadot system, and it also supports anonymity mining, which in itself is already a vital DeFi feature. In contrast, the Manta network focuses solely on the private DEX system, which limits the scope of its application scenarios severely. 
+* Our product is much more generic in the sense that it supports all the DeFi products in the Polkadot system, and it also supports anonymity mining, which in itself is already a vital DeFi feature. In contrast, the Manta network focuses solely on developing the private DEX system, which limits the scope of its application scenarios severely. 
 * From the technical perspective, the underlying zero-knowledge proof scheme for the Manta network requires trusted setup, which is why they require a trust ceremony. In contrast, the zero-knowledge proof scheme we adopt does not require any trusted setup. All the public parameters of our system can be randomly sampled from the underlying group in a totally transparent fashion, which is much more in accordance with the decentralization ethos. 
 
 ## Team :busts_in_silhouette:
@@ -100,7 +100,7 @@ Please describe the team's relevant experience.  If the project involves develop
 ### Milestone 1 — Raze Substrate Modules and cross-chain bridge implementation
 * **Estimated Duration:** 2 month
 * **FTE:**  2 
-* **Costs:** 0.75 BTC
+* **Costs:** 1 BTC
 
 The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. The substrate modules will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA and the cross-chain payment of ERC-20 tokens.   
 
@@ -115,7 +115,7 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 ### Milestone 2 — Raze client implementation and integration 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 0.75 BTC
+* **Costs:** 0.5 BTC
 
 The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts. 
 

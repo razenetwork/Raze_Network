@@ -95,12 +95,12 @@ Please describe the team's relevant experience.  If the project involves develop
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 3
-* **Total Costs:** 30K DAI
+* **Total Costs:** 20K DAI
 
 ### Milestone 1 — Raze Substrate Modules and cross-chain bridge implementation
 * **Estimated Duration:** 2 month
 * **FTE:**  2 
-* **Costs:** 20K DAI
+* **Costs:** 13K DAI
 
 The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. The substrate modules will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA and the cross-chain payment of ERC-20 tokens.   
 
@@ -115,7 +115,7 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 ### Milestone 2 — Raze client implementation and integration 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 10K DAI
+* **Costs:** 7K DAI
 
 The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts. 
 

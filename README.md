@@ -27,7 +27,7 @@ To sum up, we use public-key homomorphic encryption to ensure the balance and tr
 
 To facilitate the DeFi functionality, we have two additional modules: lock and unlock. The lock module would allow an account owner to lock the account while the unlock module allows the account owner to unlock the account. 
 
-We will also build a cross-chain bridge that can map any ERC-20 token to the Polkadot blockchain and thus enable the cross-chain payment of these tokens.
+We will also integrate a cross-chain bridge (such as ChainBridge) that can map any ERC-20 token to the Polkadot blockchain and thus enable the cross-chain payment of these tokens.
 
 ![alt text](https://github.com/razenetwork/Raze_Network/blob/main/raze_architecture.png?raw=true)
 
@@ -97,7 +97,7 @@ Please describe the team's relevant experience.  If the project involves develop
 * **Full-time equivalent (FTE):** 3
 * **Total Costs:** 20K DAI
 
-### Milestone 1 — Raze Substrate Modules and cross-chain bridge implementation
+### Milestone 1 — Raze Substrate Modules implementation and cross-chain bridge integration
 * **Estimated Duration:** 2 month
 * **FTE:**  2 
 * **Costs:** 13K DAI
@@ -107,8 +107,8 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. It will support the verification of mint, transfer, redeem, lock and unlock for mainstream Polkadot tokens such as DOT and KUSAMA and any ERC-20 token. 
-| 2. | A cross-chain bridge between Ethereum and Polkadot | The bridge will map ERC-20 token to the Polkadot ecosystem and facilitate their private payment in the Polkadot ecosystem.  
+| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. It will support the verification of mint, transfer, redeem, lock and unlock for mainstream Polkadot tokens such as DOT and KUSAMA and any ERC-20 token. The contracts will be first written in Solidity and then imported to EVM compatible substrate pallets.  
+| 2. | Integration with a cross-chain bridge between Ethereum and Polkadot such as ChainBridge | The bridge will map ERC-20 token to the Polkadot ecosystem and facilitate their private payment in the Polkadot ecosystem.  
 | 3. | Benchmark | Benchmark on the throughput and gas cost of the proposed modules |   
 | 4. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |
 
@@ -122,11 +122,10 @@ The main deliverable of this milestone is the client that can generate the trans
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Raze client module | We will implement the client that supports the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, CreateLockTx, and CreateUnlockTx algorithms. The client will be able to generate the necessary transactions to trigger the corresponding substrate modules. 
+| 1. | Raze client module | We will implement the client that supports the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, CreateLockTx, and CreateUnlockTx algorithms. The client will be able to generate the necessary transactions to trigger the corresponding substrate modules. The client will be written in Javascript and we will provide a basic UI to take inputs from the users for the relevant algorithms.       
 | 2. | Anonymity mining | Through combining the lock and mint, and unlock and redeem modules, we will implement anonymity mining functionality, which allows the users to mine the private tokens and unlock the private tokens after a certain period of time.   
-| 3. | Benchmark | Benchmark on the latency and usability of the proposed client functionalities |    
+| 3. | Benchmark | Perform unit tests on the individual algorithms to ensure their safety. Benchmark on the latency and usability of the proposed client functionalities |    
 | 4. | Docker | We will deploy the client on Kusama or Rococo and engage our community on the testing of our product. |
-
 
 ## Future Plans
 Please include the team's long-term plans and intentions.
